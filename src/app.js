@@ -32,9 +32,13 @@ const corsOptions = {
 
 class App {
   constructor() {
+    console.log('setting up express...');
     this.app = express();
+    console.log('setting up middlewares...');
     this.middlewares();
+    console.log('setting up routes...');
     this.routes();
+    console.log('Application started!');
   }
 
   middlewares() {
