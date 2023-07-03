@@ -7,9 +7,4 @@ const router = new Router();
 
 router.post('/', loginRequired, fotoController.store);
 
-// router.post('/', (req, res) => {
-//   console.log(req);
-//   return res.send('teste');
-// });
-
 export default router;
